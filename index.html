@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador | Oracle+AluraLATAM</title>
+    <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="conteudo">
+        <div class="header_img">
+          <img src="assets/images/logo.svg" alt="Logo da Alura" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="conteudo">
+        <div class="decodificador">
+          <form class="decodificador_form">
+            <div class="text_in">
+              <textarea
+                name="text_in_area"
+                id="texto"
+                placeholder="Digite seu texto aqui"
+                required
+              ></textarea>
+              <div class="text_in_info">
+                <div class="info">
+                  <img src="assets/images/exclamacao.svg" alt="" />
+                  <p id="warning">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="text_in_btns">
+                  <input id="enc" type="button" value="Criptografar" />
+                  <input id="des" type="button" value="Descriptografar" />
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="text_out_sec">
+            <div class="out_content">
+              <div class="content" id="default">
+                <div class="text_out_img">
+                  <img src="assets/images/boneco.svg" alt="Imagen de animada" />
+                </div>
+                <p>Nenhuma mensagem encontrada</p>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+              </div>
+              <div class="content invisible" id="result">
+                <textarea
+                  name="text_out_area"
+                  id="texto_out"
+                  disabled
+                ></textarea>
+                <button id="copiar">Copiar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./JS/index.js"></script>
+    <footer class="pie-pagina">
+      <p>
+        © 2024 Todos os direitos resevados por Maeldson Cavalcante Freire Costa |
+        Oracle+Alura.
+      </p>
+    
+      <a
+        href="https://www.linkedin.com/in/maeldson-cavalcante-freire-costa/"
+        target="_blank"
+        
+        ><img src="./assets/images/linkedin.png" class="pgn" alt="icono Linkedin"
+      /></a>
+      <a
+        href="https://github.com/maeldsoncavalcante100/"
+        target="_blank"
+       
+        ><img src="./assets/images/github.png" class="pgn" alt="icono GitHub"
+      /></a>
+      <a
+        href="https://www.instagram.com/maeldson_freire/"
+        target="_blank"
+       
+        ><img src="./assets/images/instagram.png" class="pgn" alt="icono Instagram"
+      /></a>
+    </footer>
+  </body>
+
+  <script src="./js/script.js"></script>
+</html>
