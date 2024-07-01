@@ -1,4 +1,4 @@
-function encriptar(traduccion){
+function decodificador(traduccion){
     document.querySelector("#warning").removeAttribute("style");
     var textarea = document.querySelector("#texto");
     const texto = textarea.value;
@@ -90,6 +90,6 @@ const copy = document.querySelector('#copiar');
 
 var traduccion = {"a": "ai", "e": "enter", "i": "imes", "o": "ober", "u": "ufat"};
 
-enc.addEventListener( 'click', function() {encriptar(traduccion);} );
+enc.addEventListener( 'click', function() {decodificador(traduccion);} );
 des.addEventListener( 'click', function() {desencriptar(traduccion);} );
 copy.addEventListener( 'click', function() {clipboard();} );
